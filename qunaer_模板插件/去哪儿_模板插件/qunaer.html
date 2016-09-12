@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>去哪儿_模板插件</title>
+		<link rel="stylesheet" type="text/css" href="./css/qunaer.css"/>
+	</head>
+	<body>
+		<div class='nav row'></div>
+		<div class='banner'></div>
+		<div class='page'></div>
+	</body>
+	<script src="./lib/jquery@2.2.4.min.js"></script>
+	<script src="./lib/arttemplate_3.0.js"></script>
+	<script id="create_nav" type="text/html">
+		<div>
+			<span class='loca_logo'></span>
+			<div>出发城市</div>
+			<ul>
+				<li><a>北京</a></li>
+				<li><a>天津</a></li>
+				<li><a>上海</a></li>
+				<li><a>广深</a></li>
+				<li><a>成都</a></li>
+				<li><a>重庆</a></li>
+				<li><a>西安</a></li>
+				<li class='current'><a>江浙</a></li>
+				<li><a>其他</a></li>
+			</ul>
+		</div>
+	</script>
+	<script id="create_banner" type="text/html">
+		<div class='banner_img'></div>
+		<div class='banner_under'>
+			<div class='banner_bck_clo'></div>
+			<ul>
+				<li><a>
+					<span>爆品专区</span>
+					<span>5折/8折疯狂抢</span>
+				</a></li>
+				<li><a>
+					<span>暑期热门线路</span>
+					<span>低至999元起</span>
+				</a></li>
+				<li><a>
+					<span>处境必备</span>
+					<span>会员WIFI 88折</span>
+				</a></li>
+				<li><a>
+					<span>特价玩水</span>
+					<span>爆款9元起</span>
+				</a></li>
+				<li><a>
+					<span>亲子夏令营</span>
+					<span>定制线路更划算</span>
+				</a></li>
+			</ul>
+		</div>
+		<div class='banner_to_buy'>
+			<label>马上去抢 ></label>
+		</div>
+		<div class='clear_float'></div>
+	</script>
+	<script id="create_body" type="text/html">
+		<%var count=0%>
+		<%for(var i=0;i<floors.length;i++){%>
+				<div class='products' id='floor_<%=(i+1)%>'>
+					<div class='products_head'>
+						<div><%=floors[i].title.name_1%></div>
+						<%if(floors[i].title.name_2!=""){%>
+							<div>+<%=floors[i].title.name_2%></div>
+						<%}%>
+						</div>
+						<div class='products_tag row'>
+						<%if((i!=4)&&(i!=5)){%>
+							<div class='current'><a href='#floor_"<%=(i+1)%>'><%=floors[i].style.name_1%></a></div>
+							<div><a href='#floor_<%=(i+1)%><%=(i+1)%>'><%=floors[i].style.name_2%></a></div>
+						<%}else if(i==5){%>
+							<div class='current'><a href='#floor_<%=(i+1)%>'><%=floors[i].style.name_1%></a></div>
+							<div><a href='#floor_<%=(i+1)%><%=(i+1)%>'><%=floors[i].style.name_2%></a></div>
+							<div><a href='#floor_<%=(i+1)%><%=(i+1)%><%=(i+1)%>'><%=floors[i].style.name_3%></a></div>
+						<%}%>
+						</div>
+						<div class='products_body'>			
+			<%for(var j=0;j<floors[i].len;j++){%>
+							<div class='row'>
+				<%for(var k=0;k<4;k++){%>
+								<div class='product'>
+									<div class='dazhe'>
+										<div>立享</div>
+										<div>
+											<%=data[count].cut%>折
+										</div>
+									</div>
+									<div class='img'>
+										<img src=<%=data[count].imgSrc%>>
+										<%if(i>=3){%>
+											<div class='background_color'></div>
+											<div class='erweima'>
+												<div></div>
+												<div>扫码购买，可享会员折扣</div>
+											</div>
+										<%}%>
+									</div>
+									<div class='place'><%=data[count].title%></div>
+									<div class='info'><%=data[count].description%></div>
+									<div class='price_info row'>
+										<div class='price'>
+											<div class='min_price'>
+												<label>￥</label>
+												<label><%=data[count].price%></label>
+												<label>起</label>
+											</div>
+											<div class='max_price'>￥<%=data[count].oldPrice%></div>
+										</div>
+										<div class='btn_buy'>抢购</div>
+									</div>
+								</div>
+					<%count++%>
+				<%}%>
+							</div>
+			<%}%>
+						</div>
+					</div>
+					<div class='title_line'>
+						<div class='line'></div>
+						<a>更多特价></a>
+					</div>
+					<%if(i==2){%>
+						<div class='vip_area'>
+							<div class='vip_head'>
+								<div>会员专区</div>
+							</div>
+							<div class='vip_body row'>
+								<div class='row'>
+									<div>1</div>
+									<div>
+										<div>购买度假全年会员特权</div>
+										<div>限时仅需19元</div>
+									</div>
+									<a class='row'>
+										<div>先到先得</div>
+										<div>></div>
+									</a>
+								</div>
+								<div></div>
+								<div class='row'>
+									<div>2</div>
+									<div>
+										<div>购买爆品专区会员</div>
+										<div>免费神级会员</div>
+									</div>
+									<a class='row'>
+										<div>去看看</div>
+									</a>
+								</div>
+							</div>
+							<div class='vip_foot'></div>
+						</div>
+					<%}%>
+		<%}%>
+		<div class='page_foot'></div>
+		<div class='page_fixed'></div>
+	</script>
+	<script id="create_page_foot" type="text/html">
+					<div class='background'>
+						<div class='line row'>
+							<div></div>
+							<div></div>
+						</div>
+						<div class='title'>正在进行的其他活动</div>
+						<div class='img'></div>
+					</div>
+	</script>
+	<script id="create_page_fixed" type="text/html">
+					<ul>
+						<li></li>
+						<li><a href='#floor_1'>国内爆品</a></li>
+						<li><a href='#floor_2'>出境爆品</a></li>
+						<li><a href='#floor_3'>暑期热门线路</a></li>
+						<li><a href='#floor_4'>会员专区</a></li>
+						<li><a href='#floor_4'>特加玩水</a></li>
+						<li><a href='#floor_5'>自由行</a></li>
+						<li><a href='#floor_6'>出境必备</a></li>
+						<li><a href='#'>TOP</a></li>
+					</ul>
+	</script>
+	<script src="./js/qunaer.js"></script>
+</html>

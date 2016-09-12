@@ -1,0 +1,613 @@
+*
+	padding 0
+	margin 0
+	box-sizing border-box
+.clearFloatDiv{
+	width 0px
+	height 0px
+	clear both
+}
+.rowDiv{
+	display flex
+	flex-direction row
+}
+a
+	cursor pointer
+body
+	.navDiv
+		top 140px
+		position absolute
+		z-index 10
+		width 100%
+		border-bottom 2px solid rgb(0,204,204)
+		.navDivFoot
+			height 40px
+			position absolute
+			margin 0 auto
+			bottom 0px
+			left 50%
+			transform translateX(-50%)
+			width 1190px
+			.ul1
+				list-style-type none
+				position absolute
+				left 0px
+				li
+					cursor pointer
+					font-size 14px
+					display inline-block
+					width 104px
+					height 40px
+					line-height 40px
+					text-align center
+					&:hover
+						font-weight bold
+						color rgb(0,204,204)
+					.jiantou
+						display inline-block
+						transform:rotate(-90deg)
+					a
+						line-height 20px
+						display inline-block
+						border-left 1px solid rgb(230,230,230)
+						width 100%
+				li:nth-child(1)
+					border-bottom 3px solid rgb(0,204,204)
+					a
+						border-left none
+			.ul2
+				list-style-type none
+				position absolute
+				right 0px
+				li
+					cursor pointer
+					font-size 14px
+					display inline-block
+					width 120px
+					height 40px
+					line-height 40px
+					text-align center
+					&:hover
+						font-weight bold
+						color rgb(0,204,204)
+					a
+						line-height 20px
+						display inline-block
+						border-left 1px solid rgb(230,230,230)
+						width 60px
+				li:nth-child(1)
+					a
+						border-left none
+					div
+						display inline-block
+						vertical-align middle
+						width 16px
+						height 16px
+						background-image url("../img/pen-black.png")
+			.ul3
+				width 126px
+				height 400px
+				list-style-type none
+				border 1px solid rgb(220,220,220)
+				position absolute
+				left 105px
+				top 30px
+				background-color white
+				display none
+				z-index 12
+				li
+					font-size 12px
+					height 40px
+					line-height 40px
+					text-align center
+					border-bottom 1px dashed rgb(220,220,220)
+					div
+						display inline-block
+						width 26px
+						height 21px
+						background-image url("../img/icon_01.png")
+						vertical-align middle
+				li:nth-child(2)
+					div
+						background-position -50px 0px
+				li:nth-child(3)
+					div
+						background-position -100px 0px
+				li:nth-child(4)
+					div
+						background-position -150px 0px
+				li:nth-child(5)
+					div
+						background-position -200px 0px
+				li:nth-child(6)
+					div
+						background-position -250px 0px
+				li:nth-child(7)
+					div
+						background-position -300px 0px
+				li:nth-child(8)
+					div
+						background-position -350px 0px
+				li:nth-child(9)
+					div
+						background-position -400px 0px
+				li:nth-child(10)
+					div
+						background-position -450px 0px
+			.ul4
+				width 126px
+				height 120px
+				list-style-type none
+				border 1px solid rgb(220,220,220)
+				position absolute
+				right 0px
+				top 30px
+				background-color white
+				display none
+				z-index 20
+				li
+					font-size 12px
+					height 40px
+					line-height 40px
+					text-align center
+					border-bottom 1px dashed rgb(220,220,220)
+					div
+						display inline-block
+						width 15px
+						height 15px
+						background-image url("../img/icon_02.png")
+						vertical-align middle
+				li:nth-child(2)
+					div
+						background-position -50px 0px
+				li:nth-child(3)
+					div
+						background-position -100px 0px
+	.pageDiv
+		background-color rgb(255,255,255)
+		margin-top 140px
+		.main
+			height 680px
+			width 1190px
+			margin 0 auto
+			position relative
+			//background-color rgb(242,242,242)
+			.main_left
+				height 680px
+				width 890px
+				margin-top 20px
+				position relative
+				.on_banner
+					height 500px
+					width 100%
+					.banner
+						width 540px
+						height 100%
+						position relative
+						overflow hidden
+						.banner_info
+							position absolute
+							width 600%
+							z-index 2
+							div
+								width 540px
+								height 500px
+							div:nth-child(1)
+								background-image url("../img/banner01.jpg")
+							div:nth-child(2)
+								background-image url("../img/banner02.jpg")
+							div:nth-child(3)
+								background-image url("../img/banner03.jpg")
+							div:nth-child(4)
+								background-image url("../img/banner04.jpg")
+							div:nth-child(5)
+								background-image url("../img/banner05.jpg")
+							div:nth-child(6)
+								background-image url("../img/banner01.jpg")
+						.banner_em
+							width 80px
+							height 10px
+							position absolute
+							bottom 10px
+							z-index 10
+							left 50%
+							transform translateX(-50%)
+							em
+								display block
+								border-radius 5px
+								height 10px
+								width 10px
+								background-color rgb(153,153,153)
+							em:not(:nth-child(1))
+								margin-left 8px
+							em.current
+								background-color rgb(0,205,205)
+					.banner_right
+						width 350px
+						height 100%
+						.banner_right_Div
+							width 100%
+							height 50%
+						.banner_right_Div:nth-child(1)
+							background-image url("../img/img01.jpg")
+						.banner_right_Div:nth-child(2)
+							background-image url("../img/img02.jpg")
+					
+				.under_banner
+					width 100%
+					height 140px
+					position relative
+					margin-top 20px
+					font-family "微软雅黑"
+					.totle_money
+						width 222px
+						height 140px
+						padding-top 40px
+						text-align center
+						.main_money_title
+							font-size 14px
+							color rgb(153,153,153)
+						.main_how_money
+							font-size 30px
+							color rgb(102,102,102)
+					.main_line
+						position absolute
+						width 1px
+						height 65px
+						top 37px
+						background-color #00ccce
+						transform rotate(20deg)
+			.main_right
+				height 660px
+				width 290px
+				margin-left 10px
+				margin-top 20px
+				.main_right_top
+					width 290px
+					height 78px
+					font-size 28px
+					line-height 78px
+					font-family "微软雅黑"
+					background: linear-gradient(to right,rgb(98,204,230), rgb(65,219,192))
+					div:nth-child(1)
+						display inline-block
+						label
+							font-size 28px
+							color white
+							padding-left 20px
+					div:nth-child(2)
+						margin-left 80px
+						background-color rgba(255,255,255,0.4)
+					div:nth-child(3)
+						background-color rgba(255,255,255,0.6)
+					div:not(:nth-child(1))
+						cursor pointer
+						font-size 14px
+						display inline-block
+						margin-top 26px
+						color #4f9a95
+						display inline-block
+						vertical-align middle
+						width 28px
+						height 28px
+						line-height 28px
+						text-align center
+				.main_right_info
+					width 290px
+					height 194px
+					position relative
+					.main_right_info_date
+						font-size 12px
+						font-family "微软雅黑"
+						text-align center
+						width 110px
+						height 30px
+						line-height 30px
+						color white
+						background-color rgb(254,100,90)
+						position absolute
+						right 0
+						bottom 0
+				.main_right_info:nth-child(2)
+					background-image url("../img/img03.jpg")
+				.main_right_info:nth-child(3)
+					background-image url("../img/img04.jpg")
+				.main_right_info:nth-child(4)
+					background-image url("../img/img05.jpg")
+		.s_hot
+			height 634px
+			background-color rgb(194,208,221)
+			font-family "微软雅黑"
+			position relative
+			background-image url("../img/img11.jpg")
+			.s_hot_title
+				color white
+				font-size 28px
+				text-align center
+				padding-top 34px
+			.rowDiv
+				&.div1
+					font-size 14px
+					color white
+					position absolute
+					left 50%
+					transform translateX(-50%)
+					top 88px
+					div
+						line-height 28px
+					a
+						display inline-block
+						height 28px
+						line-height 28px
+						padding-left 10px
+						padding-right 10px
+						border 1px solid white
+						border-radius 3px
+						margin-left 16px
+						&:hover
+							background-color rgb(0,204,206)
+							cursor pointer
+							border 1px solid rgb(0,204,206)
+				&.div2
+					width 1190px
+					margin 0 auto
+					margin-top 72px
+					.tab-pannel
+						width 222px
+						height 450px
+						cursor pointer
+						div:nth-child(1)
+							height 58px
+							width 100%
+							line-height 58px
+							font-size 24px
+							color rgb(42,52,63)
+							text-align center
+						div:nth-child(2)
+							font-size 12px
+							color #99a5b4
+							line-height 18px
+							width 160px
+							height 35px
+							padding-left 20px
+							margin-top 10px
+						div:nth-child(3)
+							font-size 16px
+							color #828c98
+							line-height 24px
+							width 100%
+							height 24px
+							padding-left 20px
+							margin-top 20px
+						div:nth-child(4)
+							font-size 31px
+							line-height 40px	
+							color #00ccce
+							padding-left 20px
+					.tab-pannel:nth-child(1)
+						background-image url("../img/img06.jpg")
+					.tab-pannel:nth-child(2)
+						background-image url("../img/img07.jpg")
+					.tab-pannel:nth-child(3)
+						background-image url("../img/img08.jpg")
+					.tab-pannel:nth-child(4)
+						background-image url("../img/img09.jpg")
+					.tab-pannel:nth-child(5)
+						background-image url("../img/img10.jpg")
+					.tab-pannel:not(:nth-child(1))
+						margin-left 20px	
+		.title
+			text-align center
+			width 1190px
+			height 140px
+			margin 0 auto
+			position relative
+			font-family "微软雅黑"
+			.title_name1
+				position absolute
+				left 50%
+				transform translateX(-50%)
+				width 136px
+				height 30px
+				font-size 28px
+				line-height 30px
+				color rgb(51,51,51)
+				top 50px
+			.title_name2
+				position absolute
+				left 50%
+				transform translateX(-50%)
+				color rgb(151,151,151)
+				top 90px
+			.title_line
+				position absolute
+				height 6px
+				width 526px
+				background-color rgb(200,200,200)
+				top 64px
+			.right_line
+				position absolute
+				right 0
+			.left_line
+				position absolute
+				left 0
+			.title_floor
+				width 100%
+				text-align left
+				position absolute
+				height 35px
+				bottom 0
+				a
+					cursor pointer
+					label:nth-child(1)
+						font-size 14px
+					label:nth-child(2)
+						font-size 20px
+					&:hover
+						color rgb(0,204,206)
+						font-weight bold
+		.title.nohead
+			height 50px
+		.infoDiv
+			width 1191px
+			margin 0 auto
+			font-family "微软雅黑"
+			>.rowDiv
+				width 100%
+				.first_info
+				.information
+					width 282px
+					height 372px
+					border 1px solid #ededed
+					.imgDiv
+						width 100%
+						height 187px
+						cursor pointer
+					.hrefDiv
+						cursor pointer
+						color #2a2a2a
+						font-size 15px
+						width 250px
+						height 42px
+						margin 0 auto
+						line-height 22px
+						margin-top 10px
+				.first_info
+					position relative
+					div
+					a
+						background-color transparent
+						margin-left 30px
+						position absolute
+					div:nth-child(2)
+						font-size 24px
+						line-height 24px
+						font-weight 300
+						color white
+						position absolute
+						width 260px
+						top 24px
+					div:nth-child(3)
+						font-size 14px
+						line-height 14px
+						color white
+						margin-top 10px
+						position absolute
+						top 60px
+					a
+						margin-top 15px
+						font-size 14px
+						display inline-block
+						line-height 31px
+						height 31px
+						text-align center
+						background-color white
+						padding-left 10px
+						padding-right 10px
+						position absolute
+						top 90px
+					.back_img
+						width 346px
+						height 370px
+						margin-left -65px
+						margin-top 0px
+						position absolute
+						text-align right
+				div:not(:nth-child(4))
+					margin-right 21px
+				.information
+					position relative
+					>.rowDiv
+						margin-left 20px
+						margin-top 20px
+						a
+							display inline-block
+							background-color rgb(240,240,240)
+							color rgb(153,153,153)
+							line-height 23px
+							font-size 12px
+							padding-left 8px
+							padding-right 8px
+							margin-right 10px
+						a:hover
+							background-color rgb(210,210,210)
+					.progress_bar_blue
+						height 6px
+						width 100px
+						border-radius 3px
+						position absolute
+						border-radius 3px
+						left 16px
+						background-color rgb(0,204,205)
+						bottom 60px
+					.progress_bar_gray
+						left 50%
+						transform translateX(-50%)
+						height 6px
+						border-radius 3px
+						position absolute
+						width 250px
+						background-color rgb(237,237,237)
+						bottom 60px
+					.info_foot
+						margin 0 auto
+						width 257px
+						margin-top 40px
+						.info_footr
+							height 31px
+							margin 0
+							.info_footr_up
+								height 14px
+								font-size 14px
+								text-align center
+								width 100%
+								color #333
+							.info_footr_down
+								margin-top 5px
+								height 12px
+								font-size 12px
+								width 100%
+								text-align center
+								color #999
+						.info_footr:nth-child(1)
+							width 58px
+						.info_footr:nth-child(2)
+							width 144px
+						.info_footr:nth-child(3)
+							width 55px
+			.rowDiv:nth-child(2)
+				margin-top 20px
+		.first_info_href.color1
+			color #78c9e3
+		.first_info_href.color2
+			color #c2a28a
+		.first_info_href.color3
+			color #6da7fc
+		.first_info_href.color4
+			color #f776bf
+		.first_info_href.color5
+			color #7cd451
+		.first_info_href.color6
+			color #f3a5a0
+		.infoDiv:nth-child(5)
+			>.rowDiv
+				.first_info
+					.back_img
+						width 280px
+						left 0px
+						border 10px solid red
+		.item-detail
+			width 1190px
+			height 310px
+			margin 0 auto
+			position relative
+			>.rowDiv
+				position absolute
+				.imgDiv
+					width 410px
+					height 270px 
+					border 1px solid
+				.item-detail_info
+					width 440px
+					height 270px
+				

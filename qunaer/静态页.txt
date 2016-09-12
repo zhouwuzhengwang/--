@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/qunaer.css"/>
+	</head>
+	<body>
+		<!-- <div class="nav row">
+			<div>
+				<span class="loca_logo"></span>
+				<div>出发城市</div>
+				<ul>
+					<li><a>北京</a></li>
+					<li><a>天津</a></li>
+					<li><a>上海</a></li>
+					<li class="current"><a>广深</a></li>
+					<li><a>成都</a></li>
+					<li><a>重庆</a></li>
+					<li><a>西安</a></li>
+					<li><a>江浙</a></li>
+					<li><a>其他</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner_img"></div>
+			<div class="banner_under">
+				<div class="banner_bck_clo"></div>
+				<ul>
+					<li><a>
+						<span>爆品专区</span>
+						<span>5折/8折疯狂抢</span>
+					</a></li>
+					<li><a>
+						<span>暑期热门线路</span>
+						<span>低至999元起</span>
+					</a></li>
+					<li><a>
+						<span>处境必备</span>
+						<span>会员WIFI 88折</span>
+					</a></li>
+					<li><a>
+						<span>特价玩水</span>
+						<span>爆款9元起</span>
+					</a></li>
+					<li><a>
+						<span>亲子夏令营</span>
+						<span>定制线路更划算</span>
+					</a></li>
+				</ul>
+			</div>
+			<div class="banner_to_buy">
+				<label>马上去抢 ></label>
+			</div>
+			<div class="clear_float"></div>
+		</div> -->
+		<!-- <div class="page"> -->
+			<!-- <div class="products">
+				<div class="products_head">
+					<div>国内爆品专区</div>
+					<div>抢购产品秒变度假会员</div>
+				</div>
+				<div class="products_tag row">
+					<div class="current">跟团游</div>
+					<div>自由行</div>
+				</div>
+				<div class="products_body">
+					<div class="row">
+						<div class="product">
+							<div class="dazhe">
+								<div>立享</div>
+								<div>4.7折</div>
+							</div>
+							<div class="img">
+								<img src="123123"/>
+							</div>
+							<div class="place">杭州-成都 6天5晚 跟团游</div>
+							<div class="info">走进童话世界：纯玩0购物+奢侈AFJFUFUOKHLKH</div>
+							<div class="price_info row">
+								<div class="price">
+									<div class="min_price">
+										<label>￥</label>
+										<label>3722</label>
+										<label>起</label>
+									</div>
+									<div class="max_price">
+										￥9305
+									</div>
+								</div>
+								<div class="btn_buy">抢购</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="title_line">
+				<div class="line"></div>
+				<a>更多特价></a>
+			</div> -->
+
+
+
+			<!-- <div class="vip_area">
+				<div class="vip_head">
+					<div>会员专区</div>
+				</div>
+				<div class="vip_body row">
+					<div class="row">
+						<div>1</div>
+						<div>
+							<div>购买度假全年会员特权</div>
+							<div>限时仅需19元</div>
+						</div>
+						<a class="row">
+							<div>先到先得</div>
+							<div>></div>
+						</a>
+					</div>
+					<div></div>
+					<div class="row">
+						<div>2</div>
+						<div>
+							<div>购买爆品专区会员</div>
+							<div>免费神级会员</div>
+						</div>
+						<a class="row">
+							<div>去看看</div>
+						</a>
+					</div>
+				</div>
+				<div class="vip_foot"></div>
+			</div> -->
+
+
+
+
+			<!-- <div class="page_foot">
+				<div class="background">
+					<div class="line row">
+						<div></div>
+						<div></div>
+					</div>
+					<div class="title">正在进行的其他活动</div>
+					<div class="img"></div>
+				</div>
+			</div> -->
+
+
+			<!-- <div class="page_fixed">
+				<ul>
+					<li></li>
+					<li><a>国内爆品</a></li>
+					<li><a>出境爆品</a></li>
+					<li><a>暑期热门线路</a></li>
+					<li><a>会员专区</a></li>
+					<li><a>特加玩水</a></li>
+					<li><a>自由行</a></li>
+					<li><a>出境必备</a></li>
+					<li><a>TOP</a></li>
+				</ul>
+			</div> -->
+		<!-- </div> -->
+	</body>
+	<script src="./lib/jquery@2.2.4.min.js"></script>
+	<script src="./js/qunaer.js"></script>
+</html>

@@ -1,0 +1,388 @@
+*
+	padding 0
+	margin 0
+	box-sizing border-box
+	font-family "微软雅黑"
+.clearFloatDiv
+	width 0px
+	height 0px
+	clear both
+.row
+	display flex
+	flex-direction row
+body
+	width 1190px
+	margin 0 auto
+	.navDiv
+		height 39px
+		width 100%
+		background-color rgb(245,245,245)
+		border 1px solid #E8E8E8
+		border-bottom none
+		position relative
+		.navUl
+			list-style-type none
+			li
+				float left
+				width 87px
+				height 39px
+				line-height 39px
+				text-align center
+				color #6d6d6d
+				background-color rgb(245,245,245)
+				font-size 12px
+				border 1px solid #E8E8E8
+				cursor pointer
+			li.current
+				background-color white
+				color #f50
+		.find_price_div
+			left 360px
+			line-height 39px
+			height 40px
+			background-color white
+			position absolute
+			width 196px
+			padding-left 15px
+			border 1px solid rgba(204,204,204,0)
+			border-bottom 1px solid rgb(232,232,232)
+			top -1px
+			background-color rgb(245,245,245)
+			.to_find_price
+				width 46px
+				height 24px
+				border-radius 3px
+				color white
+				font-size 12px
+				text-align center
+				line-height 24px
+				background-color rgb(255,68,0)
+				margin-left 119px
+				margin-top -30px
+				cursor pointer
+		label
+			position relative
+		.minprice,.maxprice
+			background-color white
+			border 1px solid #dfdfdf
+			width 45px
+			height 21px
+			position relative
+			text-indent 8px
+		.which_page
+			height 40px
+			position absolute
+			right 0px
+			width 188px
+			top -1px
+			font-size 12px
+			a
+				display inline-block
+				line-height 40px
+				height 40px
+				width 39px
+				text-align center
+				div
+					width 12px
+					height 12px
+					background-image url(../img/icon01.png)
+					display inline-block
+			a:nth-child(1)
+				background-color white
+				border 1px solid rgb(232,232,232)
+				div
+					background-position -411px -381px
+			a:nth-child(2)
+				div
+					background-position -272px -169px
+			a:nth-child(3)
+			a:nth-child(4)
+				width 6px
+				span
+					display inline-block
+					width 6px
+					height 9px
+					background-image url(../img/icon01.png)
+					background-position -272px -169px
+			a
+				&.left
+					span
+						background-position -158px -423px
+			a
+				&.right
+					width 6px
+					span
+						display inline-block
+						width 6px
+						height 9px
+						background-image url(../img/icon01.png)
+						background-position -174px -423px
+			.this_page
+				color #f40
+		.address
+			position absolute
+			z-index 2
+			right 186px
+			height 41px
+			top -1px
+			line-height 39px
+			color #6d6d6d
+			text-align center
+			width 90px
+			font-size 12px
+			border 1px solid rgba(204,204,204,0)
+			span:nth-child(2)
+				display inline-block
+				width 7px
+				height 4px
+				background-image url(../img/icon01.png)
+				background-position -296px -423px
+		.address_info
+			position absolute
+			z-index 1
+			width 355px
+			height 355px
+			border 1px solid rgb(204,204,204)
+			background-color white
+			right -79px
+			display none
+			.row:nth-child(1)
+				margin-left 10px
+				margin-top 10px
+			.row
+				a
+					display block
+					flex-grow 1
+					padding-left 10px
+					line-height 24px
+					font-size 12px
+					&:hover
+						color rgb(255,68,0)
+				.which_place
+					width 180px
+					height 24px
+					line-height 24px
+					font-size 12px
+					border 1px solid rgb(204,204,204)
+					margin-left 10px
+					background-color white
+					color rgb(170,170,170)
+				.to_find_place
+					height 24px
+					line-height 24px
+					font-size 12px
+					color white
+					text-align center
+					background-color rgb(255,68,0)
+					border-radius 3px
+					width 45px
+					margin-left 10px
+			.address_line
+				height 12px
+				width 95%
+				margin 0 auto
+				margin-top 12px
+				border-top 1px dashed rgb(204,204,204)
+	.filter_row
+		height 39px
+		width 100%
+		line-height 39px
+		color #6d6d6d
+		border 1px solid #E8E8E8
+		.by_or_hdfk
+			height 100%
+			width 50%
+			border 1px solid rgba(204,204,204,0)
+			line-height 39px
+			font-size 12px
+			padding-left 13px
+			span
+				width 13px
+				height 13px
+				display inline-block
+				background-image url(../img/icon01.png)
+				background-position -435px -359px
+			&:hover
+				border 1px solid rgba(204,204,204,1)
+	.product_page
+		width 1190px
+		>.row
+			margin-top 25px
+			.product:not(:nth-child(1))
+				margin-left 22px
+			.product
+				width 220px
+				height 351px
+				border 1px solid rgb(237,237,237)
+				position relative
+				//overflow hidden
+				&:hover
+					border 1px solid #f40
+				.img
+					width 220px
+					height 220px
+					position relative
+					overflow hidden
+					img
+						width 218px
+					.row
+						width 218px
+						height 30px
+						background-color rgba(255,68,0,0.9)
+						position absolute
+						bottom -30px
+						a
+							width 50%
+							height 30px
+							line-height 30px
+							color white
+							font-size 12px
+							text-align center
+						a:nth-child(1)
+							border-right 1px solid rgba(255,255,255,0.5)
+				div.price_div
+					width 100%
+					height 40px
+					line-height 40px
+					padding-left 10px
+					color #F40
+					label.price
+						display inline-block
+						font-weight bold
+						font-size 18px
+						line-height 30px
+					label.baoyou
+						margin-left 5px
+						display inline-block
+						width 27px
+						height 14px
+						background-image url(../img/icon02.png)
+						background-position -0px -120px
+					label.amount
+						display inline-block
+						height 40px
+						font-size 12px
+						line-height 40px
+						margin-right 10px
+						color #3d3d3d
+						float right
+				div.name
+					width 198px
+					height 30px
+					margin 0 auto
+					a
+						color #3d3d3d
+						font-size 12px
+						width 100%
+						&:hover
+							color #f40
+				div.store_info
+					width 198px
+					height 22px
+					margin 7px auto
+					height 22px
+					>div
+						font-size 12px
+					.three_info
+						margin-top 3px
+						width 14px
+						height 14px
+						float left
+						div
+							width 8px
+							height 2px
+							margin-top 2px
+							background-color #f40
+					.boss
+						width 100px
+						height 22px
+						line-height 22px
+						float left
+						a
+							&:hover
+								color #f40
+					.place
+						width 51px
+						height 22px
+						line-height 22px
+						float right
+						text-align right
+				div.tags
+					>div
+						width 16px
+						height 16px
+						margin-left 10px
+						background-image url(../img/icon03.png)
+						float left
+					div.gold
+						background-position -269px -213px
+					div.fu
+						background-position -187px -251px
+					div.xian
+						background-position -295px -161px
+					div.buy
+						font-size 12px
+						width 60px
+						height 20px
+						line-height 20px
+						background-image none
+						background-color rgb(245,245,245)
+						border 1px solid rgb(232,232,232)
+						border-radius 2px
+						text-align center
+						float right
+						margin-right 10px
+						cursor pointer
+						display none
+				div.store_information
+					width 220px
+					height 170px
+					position absolute
+					background-image url(../img/04.png)
+					background-size 220px 170px
+					z-index 20
+					display none
+					top 315px
+					left -1px
+					.row:nth-child(1)
+						height 30px
+						margin-top 9px
+						line-height 30px
+						span
+							width 20px
+							height 18px
+							display block
+							margin-top 10px
+							background-image url(../img/icon02.png)
+							background-position -239px -99px
+						span:nth-child(1)
+							margin-left 10px
+						label
+							margin-left 10px
+							font-size 12px
+					div.line
+						width 95%
+						border-top 1px dashed rgb(153,153,153)
+						margin 3px auto
+						height 20px
+					.row:not(:nth-child(1))
+						font-size 12px
+						height 18px
+						padding-left 10px
+						margin-top 5px
+						label
+							display inline-block
+							line-height 18px
+						label:nth-child(1)
+							width 96px
+						label:nth-child(2)
+							color white
+							background-color rgb(255,68,0)
+							text-align center
+							width 78px
+						label:nth-child(3)
+							width 50px
+							margin-left 10px
+							color rgb(255,68,0)
+					.row:nth-child(2)
+						margin-top 20px

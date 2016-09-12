@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+.clearFloatDiv {
+  width: 0px;
+  height: 0px;
+  clear: both;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+body {
+  width: 1190px;
+  margin: 0 auto;
+}
+body .navDiv {
+  height: 39px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-bottom: none;
+  position: relative;
+}
+body .navDiv .navUl {
+  list-style-type: none;
+}
+body .navDiv .navUl li {
+  float: left;
+  width: 87px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  color: #6d6d6d;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+body .navDiv .navUl li.current {
+  background-color: #fff;
+  color: #f50;
+}
+body .navDiv .find_price_div {
+  left: 360px;
+  line-height: 39px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  width: 196px;
+  padding-left: 15px;
+  border: 1px solid rgba(204,204,204,0);
+  border-bottom: 1px solid #e8e8e8;
+  top: -1px;
+  background-color: #f5f5f5;
+}
+body .navDiv .find_price_div .to_find_price {
+  width: 46px;
+  height: 24px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #f40;
+  margin-left: 119px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+body .navDiv label {
+  position: relative;
+}
+body .navDiv .minprice,
+body .navDiv .maxprice {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  width: 45px;
+  height: 21px;
+  position: relative;
+  text-indent: 8px;
+}
+body .navDiv .which_page {
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  width: 188px;
+  top: -1px;
+  font-size: 12px;
+}
+body .navDiv .which_page a {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  width: 39px;
+  text-align: center;
+}
+body .navDiv .which_page a div {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon01.png");
+  display: inline-block;
+}
+body .navDiv .which_page a:nth-child(1) {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+body .navDiv .which_page a:nth-child(1) div {
+  background-position: -411px -381px;
+}
+body .navDiv .which_page a:nth-child(2) div {
+  background-position: -272px -169px;
+}
+body .navDiv .which_page a:nth-child(3),
+body .navDiv .which_page a:nth-child(4) {
+  width: 6px;
+}
+body .navDiv .which_page a:nth-child(3) span,
+body .navDiv .which_page a:nth-child(4) span {
+  display: inline-block;
+  width: 6px;
+  height: 9px;
+  background-image: url("../img/icon01.png");
+  background-position: -272px -169px;
+}
+body .navDiv .which_page a.left span {
+  background-position: -158px -423px;
+}
+body .navDiv .which_page a.right {
+  width: 6px;
+}
+body .navDiv .which_page a.right span {
+  display: inline-block;
+  width: 6px;
+  height: 9px;
+  background-image: url("../img/icon01.png");
+  background-position: -174px -423px;
+}
+body .navDiv .which_page .this_page {
+  color: #f40;
+}
+body .navDiv .address {
+  position: absolute;
+  z-index: 2;
+  right: 186px;
+  height: 41px;
+  top: -1px;
+  line-height: 39px;
+  color: #6d6d6d;
+  text-align: center;
+  width: 90px;
+  font-size: 12px;
+  border: 1px solid rgba(204,204,204,0);
+}
+body .navDiv .address span:nth-child(2) {
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  background-image: url("../img/icon01.png");
+  background-position: -296px -423px;
+}
+body .navDiv .address_info {
+  position: absolute;
+  z-index: 1;
+  width: 355px;
+  height: 355px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  right: -79px;
+  display: none;
+}
+body .navDiv .address_info .row:nth-child(1) {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+body .navDiv .address_info .row a {
+  display: block;
+  flex-grow: 1;
+  padding-left: 10px;
+  line-height: 24px;
+  font-size: 12px;
+}
+body .navDiv .address_info .row a:hover {
+  color: #f40;
+}
+body .navDiv .address_info .row .which_place {
+  width: 180px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  background-color: #fff;
+  color: #aaa;
+}
+body .navDiv .address_info .row .to_find_place {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: #f40;
+  border-radius: 3px;
+  width: 45px;
+  margin-left: 10px;
+}
+body .navDiv .address_info .address_line {
+  height: 12px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 12px;
+  border-top: 1px dashed #ccc;
+}
+body .filter_row {
+  height: 39px;
+  width: 100%;
+  line-height: 39px;
+  color: #6d6d6d;
+  border: 1px solid #e8e8e8;
+}
+body .filter_row .by_or_hdfk {
+  height: 100%;
+  width: 50%;
+  border: 1px solid rgba(204,204,204,0);
+  line-height: 39px;
+  font-size: 12px;
+  padding-left: 13px;
+}
+body .filter_row .by_or_hdfk span {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-image: url("../img/icon01.png");
+  background-position: -435px -359px;
+}
+body .filter_row .by_or_hdfk:hover {
+  border: 1px solid #ccc;
+}
+body .product_page {
+  width: 1190px;
+}
+body .product_page >.row {
+  margin-top: 25px;
+}
+body .product_page >.row .product:not(:nth-child(1)) {
+  margin-left: 22px;
+}
+body .product_page >.row .product {
+  width: 220px;
+  height: 351px;
+  border: 1px solid #ededed;
+  position: relative;
+}
+body .product_page >.row .product:hover {
+  border: 1px solid #f40;
+}
+body .product_page >.row .product .img {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+body .product_page >.row .product .img img {
+  width: 218px;
+}
+body .product_page >.row .product .img .row {
+  width: 218px;
+  height: 30px;
+  background-color: rgba(255,68,0,0.9);
+  position: absolute;
+  bottom: -30px;
+}
+body .product_page >.row .product .img .row a {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+body .product_page >.row .product .img .row a:nth-child(1) {
+  border-right: 1px solid rgba(255,255,255,0.5);
+}
+body .product_page >.row .product div.price_div {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  color: #f40;
+}
+body .product_page >.row .product div.price_div label.price {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .product_page >.row .product div.price_div label.baoyou {
+  margin-left: 5px;
+  display: inline-block;
+  width: 27px;
+  height: 14px;
+  background-image: url("../img/icon02.png");
+  background-position: 0px -120px;
+}
+body .product_page >.row .product div.price_div label.amount {
+  display: inline-block;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  margin-right: 10px;
+  color: #3d3d3d;
+  float: right;
+}
+body .product_page >.row .product div.name {
+  width: 198px;
+  height: 30px;
+  margin: 0 auto;
+}
+body .product_page >.row .product div.name a {
+  color: #3d3d3d;
+  font-size: 12px;
+  width: 100%;
+}
+body .product_page >.row .product div.name a:hover {
+  color: #f40;
+}
+body .product_page >.row .product div.store_info {
+  width: 198px;
+  height: 22px;
+  margin: 7px auto;
+  height: 22px;
+}
+body .product_page >.row .product div.store_info >div {
+  font-size: 12px;
+}
+body .product_page >.row .product div.store_info .three_info {
+  margin-top: 3px;
+  width: 14px;
+  height: 14px;
+  float: left;
+}
+body .product_page >.row .product div.store_info .three_info div {
+  width: 8px;
+  height: 2px;
+  margin-top: 2px;
+  background-color: #f40;
+}
+body .product_page >.row .product div.store_info .boss {
+  width: 100px;
+  height: 22px;
+  line-height: 22px;
+  float: left;
+}
+body .product_page >.row .product div.store_info .boss a:hover {
+  color: #f40;
+}
+body .product_page >.row .product div.store_info .place {
+  width: 51px;
+  height: 22px;
+  line-height: 22px;
+  float: right;
+  text-align: right;
+}
+body .product_page >.row .product div.tags >div {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-image: url("../img/icon03.png");
+  float: left;
+}
+body .product_page >.row .product div.tags div.gold {
+  background-position: -269px -213px;
+}
+body .product_page >.row .product div.tags div.fu {
+  background-position: -187px -251px;
+}
+body .product_page >.row .product div.tags div.xian {
+  background-position: -295px -161px;
+}
+body .product_page >.row .product div.tags div.buy {
+  font-size: 12px;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  background-image: none;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  text-align: center;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+body .product_page >.row .product div.store_information {
+  width: 220px;
+  height: 170px;
+  position: absolute;
+  background-image: url("../img/04.png");
+  background-size: 220px 170px;
+  z-index: 20;
+  display: none;
+  top: 315px;
+  left: -1px;
+}
+body .product_page >.row .product div.store_information .row:nth-child(1) {
+  height: 30px;
+  margin-top: 9px;
+  line-height: 30px;
+}
+body .product_page >.row .product div.store_information .row:nth-child(1) span {
+  width: 20px;
+  height: 18px;
+  display: block;
+  margin-top: 10px;
+  background-image: url("../img/icon02.png");
+  background-position: -239px -99px;
+}
+body .product_page >.row .product div.store_information .row:nth-child(1) span:nth-child(1) {
+  margin-left: 10px;
+}
+body .product_page >.row .product div.store_information .row:nth-child(1) label {
+  margin-left: 10px;
+  font-size: 12px;
+}
+body .product_page >.row .product div.store_information div.line {
+  width: 95%;
+  border-top: 1px dashed #999;
+  margin: 3px auto;
+  height: 20px;
+}
+body .product_page >.row .product div.store_information .row:not(:nth-child(1)) {
+  font-size: 12px;
+  height: 18px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+body .product_page >.row .product div.store_information .row:not(:nth-child(1)) label {
+  display: inline-block;
+  line-height: 18px;
+}
+body .product_page >.row .product div.store_information .row:not(:nth-child(1)) label:nth-child(1) {
+  width: 96px;
+}
+body .product_page >.row .product div.store_information .row:not(:nth-child(1)) label:nth-child(2) {
+  color: #fff;
+  background-color: #f40;
+  text-align: center;
+  width: 78px;
+}
+body .product_page >.row .product div.store_information .row:not(:nth-child(1)) label:nth-child(3) {
+  width: 50px;
+  margin-left: 10px;
+  color: #f40;
+}
+body .product_page >.row .product div.store_information .row:nth-child(2) {
+  margin-top: 20px;
+}
